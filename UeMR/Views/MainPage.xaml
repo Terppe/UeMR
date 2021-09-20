@@ -14,6 +14,18 @@
                 The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content.
                 Place your content here.
             -->
+            <Grid>
+                <StackPanel>
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="72" />
+                            <Setter Property="Margin" Value="0,0,0,12" />
+                        </Style>
+                    </StackPanel.Resources>
+                     <TextBlock Text="MainPage" />
+                </StackPanel>
+            </Grid>
+
         </Grid>
     </Grid>
 </Page>
