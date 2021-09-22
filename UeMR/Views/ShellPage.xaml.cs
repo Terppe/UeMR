@@ -22,8 +22,8 @@ namespace UeMR.Views
         {
             ViewModel = viewModel;
             InitializeComponent();
-            ViewModel.NavigationService.Frame = shellFrame;
-            ViewModel.NavigationViewService.Initialize(navigationView);
+            ViewModel.NavigationService.Frame = ShellFrame;
+            ViewModel.NavigationViewService.Initialize(NavigationView);
         }
 
         private void OnLoaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)

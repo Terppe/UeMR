@@ -4,16 +4,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Style="{StaticResource PageStyle}">
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
 
     <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
-        <Grid
-            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+        <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--
                 The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content.
                 Place your content here.
             -->
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock x:Name="LbVersion" Text="Version" />
+            </Grid>
+
             <Grid>
                 <StackPanel>
                     <StackPanel.Resources>
@@ -22,7 +25,7 @@
                             <Setter Property="Margin" Value="0,0,0,12" />
                         </Style>
                     </StackPanel.Resources>
-                     <TextBlock Text="MainPage" />
+                    <TextBlock Text="MainPage" />
                 </StackPanel>
             </Grid>
 

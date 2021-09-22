@@ -1,7 +1,6 @@
-﻿using CommunityToolkit.Mvvm.DependencyInjection;
-
+﻿using System;
+using CommunityToolkit.Mvvm.DependencyInjection;
 using Microsoft.UI.Xaml.Controls;
-
 using UeMR.ViewModels;
 
 namespace UeMR.Views
@@ -14,6 +13,9 @@ namespace UeMR.Views
         {
             ViewModel = Ioc.Default.GetService<MainViewModel>();
             InitializeComponent();
+
+            LbVersion.Text = ".NET Core Version: " + Environment.Version + " + OS-Version " + Environment.OSVersion;
+
         }
     }
 }
