@@ -14,6 +14,9 @@
   <PropertyGroup>
     <NoWarn>CA1416, $(NoWarn)</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="Assets\Home.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />
@@ -33,5 +36,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UeMR.Core\UeMR.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 </Project>
