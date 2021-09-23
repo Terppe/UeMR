@@ -27,6 +27,7 @@
     <PackageReference Include="CommunityToolkit.WinUI.UI.Animations" Version="7.0.3" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.0.3" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.0.3" />
+    <PackageReference Include="MailKit" Version="2.15.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
     <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.0" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.4" />
@@ -38,6 +39,7 @@
     <ProjectReference Include="..\UeMR.Core\UeMR.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Mail\" />
     <Folder Include="NewFolder\" />
   </ItemGroup>
 </Project>
